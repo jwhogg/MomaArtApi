@@ -1,7 +1,12 @@
 <template>
     <div>
-      <img v-if="imageUrl" :src="imageUrl" alt="Fetched Image" />
-      <p v-else>Loading image...</p>
+        <template v-if="imageUrl">
+        <img :src="imageUrl" alt="Fetched Image" />
+        <p>{{ selectedObject.artistDisplayName || "Unidentified artist" }}</p>
+        <p>{{ selectedObject.title }}</p>
+        <p>{{ selectedObject.accessionYear }}</p>
+        </template>
+        <p v-else>Loading image...</p>
     </div>
 </template>
   

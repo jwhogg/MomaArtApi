@@ -15,13 +15,11 @@
 
 <script>
 import DisplayImage from './DisplayImage.vue';
-import ImageInfo from './ImageInfo.vue';
 import ReloadPageButton from './ReloadPageButton.vue';
 
 export default {
   components: {
     DisplayImage,
-    ImageInfo,
     ReloadPageButton
   },
   data() {
